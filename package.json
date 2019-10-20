@@ -1,0 +1,25 @@
+{
+  "name": "chart-race-react",
+  "version": "1.0.0",
+  "description": "Seamless bar chart race component for React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mckinsey666/chart-race-react.git"
+  },
+  "keywords": [
+    "bar-chart-race",
+    "bar-charts",
+    "data-science",
+    "visualization"
+  ],
+  "author": "Mckinsey666",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mckinsey666/chart-race-react/issues"
+  },
+  "homepage": "https://github.com/Mckinsey666/chart-race-react#readme"
+}
