@@ -17,5 +17,5 @@ import { BarChart } from 'chart-race-react';
 > Fully customizable React component. Define colors, font styles, icons, formatting, and etc!.
 <br>
 <p align=center>
-    <img src="./assets/demo2.gif" width="800">
+    <img src="./assets/demo_icon.gif" width="800">
 </p>
