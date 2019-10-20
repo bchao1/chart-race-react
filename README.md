@@ -22,6 +22,7 @@ You should wrap `BarChart` inside a container `div` that acts as a sandbox. The 
 > Passing props.
 
 You will need to pass your own props to the `BarChart` component.
+
 |Prop|Type|Explanation|
 |---|---|---|
 |**data**|Object|An object with keys being the data field name and value being Array data. `data[key].length` should be equal to **len**.|
