@@ -1,6 +1,16 @@
 import React from 'react';
-import classes from './Bar.module.css';
 import { Transition } from 'react-transition-group'
+
+const classes = {
+    bar: {
+        position: "relative",
+    },
+    container: {
+        width: "100%",
+        display: "flex",
+        position: "absolute",
+    }
+}
 
 function Bar(props) {
     const barDefaultStyle = {
@@ -22,7 +32,7 @@ function Bar(props) {
           exiting: {marginTop: props.currStyle.marginTop},
       }
       return (
-          <div className={classes.container}>
+          <div style={classes.container}>
             <Transition in={true} timeout={props.timeout}>
                 { 
                 state => (
@@ -35,9 +45,8 @@ function Bar(props) {
                     {props.label}
                 </div>
                 <div style={{width: `${props.width[1]}%`}}>
-                    <div 
-                        className={classes.bar}
-                        style={{...barDefaultStyle, ...barTransitionStyles[state]}} 
+                    <div
+                        style={{...classes.bar, ...barDefaultStyle, ...barTransitionStyles[state]}} 
                     />
                 </div>
                 <div style={{

@@ -1,7 +1,15 @@
 import React from 'react';
-import classes from './BarChart.module.css';
 import Bar from './Bar';
 
+const classes = {
+  barChart: {
+    width: "100%",
+    position: "relative",
+  },
+  container: {
+    width: "100%",
+  }
+}
 class BarChart extends React.Component {
     constructor(props){
         super(props);
@@ -98,11 +106,11 @@ class BarChart extends React.Component {
   
     render(){
       return (
-        <div className={classes.container}>
+        <div style={classes.container}>
           <div style={this.props.timelineStyle}>
             {this.props.timeline[this.state.idx]}
           </div>
-          <div className={classes.barChart} style={this.barChartStyle}>
+          <div style={{...classes.barChart, ...this.barChartStyle}}>
             {
               Object.keys(this.props.data).map(name => {
                 const [value, hidden, currStyle, prevStyle] = this.getInfoFromRank(name);
