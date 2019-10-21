@@ -1,6 +1,6 @@
 {
   "name": "chart-race-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Seamless bar chart race component for React.",
   "main": "dist/index.js",
   "scripts": {

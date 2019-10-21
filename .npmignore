@@ -1,0 +1,18 @@
+# https://gist.github.com/marcossffilho/ea0ce441b126ff4b4ca2
+.lock-wscript
+.gitignore
+.svn/
+.hg/
+.git/
+CVS/
+*~
+*.bak
+*.kate-swp
+node_modules/
+npm-debug.log
+assets/
+examples/
+src/
+.gitignore
+babel.config.js
+README.md
