@@ -1,14 +1,11 @@
 # `chart-race-react`
 > 📊 Seamless & fully customizable bar chart race component for React https://www.npmjs.com/package/chart-race-react .
-<br>
-<p align=center>
-    <img src="./assets/demo_icon.gif" width="800">
-</p>
 
 ||||
 |---|---|---|
 |<p align=center><img src="./assets/color1.gif" width="600"></p>|<p align=center><img src="./assets/color2.gif" width="600"></p>|<p align=center><img src="./assets/color3.gif" width="600"></p>|
 |<p align=center><img src="./assets/border1.gif" width="600"></p>|<p align=center><img src="./assets/border2.gif" width="600"></p>|<p align=center><img src="./assets/border3.gif" width="600"></p>|
+||||
 
 ## Quick Start
 ```
@@ -44,8 +41,16 @@ You will need to pass your own props to the `BarChart` component. Refer to `exam
 |**maxItems**|Integer|Defines the maximum number of items to show in the chart. Should be less or equal to `Object.keys(data).length`.|
 
 ## More Demo 
-> Define text styles, colors, duration, and layout with grace.
+Easibly define custom data, text styles, colors, duration, and layout.
+
+> Use your own data.
 <br>
 <p align=center>
     <img src="./assets/demo.gif" width="800">
+</p>
+
+> Add labels with images.
+<br>
+<p align=center>
+    <img src="./assets/demo_icon.gif" width="800">
 </p>
