@@ -28,14 +28,13 @@ You will need to pass your own props to the `BarChart` component. Refer to `exam
 |**start**|Boolean|Defines whether the bar chart race has started. Default is `true` and the chart race will start as the component mounts.|
 |**data**|Object|An object with keys being the data field name and value being Array data. `data[key].length` should be equal to **len**.|
 |**timeline**|Array|An array defining the time indices. Length should be equal to **len**.|
-|**labels**|Object|An object with keys being the data field name and value being the HTML element that acts as the data field's label.|
+|**labels**|Object|An object with keys being the data field name and value being a HTML element that acts as the data field's label.|
 |**colors**|Object|An object with keys being the data field name and value being the color the data bar.|
-|**len**|Integer|Length of the time indices.|
 |**timeout**|Integer|Transition time between adjacent time indices (in ms).|
 |**delay**|Integer|Waiting time between adjacent time indices (in ms).|
 |**timelineStyle**|Object|CSS style objects for time indices.|
 |**textBoxStyle**|Object|CSS style objects for data text.|
-|**barStyle**|Object|Object defining the `height` of each bar and the `offset` between adjacent bars.|
+|**barStyle**|Object|CSS style object defining the style of all the bars. It is advised to use `height` to define the thickness and `marginTop` to define the distance between adjacent bars.|
 |**width**|Array|Defines the width allocation for label, bar, and text box. Values in **width** should add up to 100.|
 |**maxItems**|Integer|Defines the maximum number of items to show in the chart. Should be less or equal to `Object.keys(data).length`.|
 
