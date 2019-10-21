@@ -102,3 +102,6 @@ public
 .tern-port
 
 .DS_Store
+
+build/
+dist/

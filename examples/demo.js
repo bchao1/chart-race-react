@@ -52,8 +52,9 @@ class App extends React.Component {
               fontSize: "30px",
             }}
             barStyle={{
-              height: 60,
-              offset: 10
+              height: "60px",
+              marginTop: "10px",
+              borderRadius: "10px",
             }}
             width={[15, 75, 10]}
             maxItems={5}

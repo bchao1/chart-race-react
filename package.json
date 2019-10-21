@@ -2,9 +2,10 @@
   "name": "chart-race-react",
   "version": "1.0.0",
   "description": "Seamless bar chart race component for React.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,23 @@
   "bugs": {
     "url": "https://github.com/Mckinsey666/chart-race-react/issues"
   },
-  "homepage": "https://github.com/Mckinsey666/chart-race-react#readme"
+  "homepage": "https://github.com/Mckinsey666/chart-race-react#readme",
+  "peerDependencies": {
+    "react": "^16.10.2",
+    "react-transition-group": "^4.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "react": "^16.10.2",
+    "react-transition-group": "^4.3.0"
+  },
+  "files": [
+    "dist/*"
+  ]
 }
