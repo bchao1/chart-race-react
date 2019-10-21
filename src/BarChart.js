@@ -14,7 +14,6 @@ class BarChart extends React.Component {
     constructor(props){
         super(props);
         this.barHeight = `calc(${props.barStyle.height} + ${props.barStyle.marginTop})`;
-        console.log(this.barHeight);
         this.nItmes = Object.keys(this.props.data).length;
         this.maxItems = props.maxItems <= this.nItmes ? props.maxItems : this.nItmes;
         this.barChartStyle = {
@@ -87,19 +86,15 @@ class BarChart extends React.Component {
       const hidden = (this.state.currRank[name] === undefined);
       const currStyle = {
         ...this.props.barStyle,
-        ...{
-          marginTop: `calc(${this.state.currRank[name]} * ${this.barHeight})`,
-          width: `${100 * this.props.data[name][currIdx]/ this.state.maxVal}%`,
-          backgroundColor: this.props.colors[name],
-        }
+        marginTop: `calc(${this.state.currRank[name]} * ${this.barHeight})`,
+        width: `${100 * this.props.data[name][currIdx]/ this.state.maxVal}%`,
+        backgroundColor: this.props.colors[name],
       };
       const prevStyle = {
         ...this.props.barStyle,
-        ...{
-          marginTop: `calc(${this.state.prevRank[name]} * ${this.barHeight})`,
-          width: `${100 * this.props.data[name][prevIdx]/ this.state.maxVal}%`,
-          backgroundColor: this.props.colors[name],
-        }
+        marginTop: `calc(${this.state.prevRank[name]} * ${this.barHeight})`,
+        width: `${100 * this.props.data[name][prevIdx]/ this.state.maxVal}%`,
+        backgroundColor: this.props.colors[name],
       };
       return [value, hidden, currStyle, prevStyle];
     }

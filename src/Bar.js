@@ -14,12 +14,12 @@ const classes = {
 
 function Bar(props) {
     const barDefaultStyle = {
-        ...{ transition: `all ${props.timeout}ms ease-in-out`},
+        transition: `all ${props.timeout}ms ease-in-out`,
         ...props.prevStyle,
       };
       const posDefaultStyle = {
-        ...{ transition: `all ${props.timeout}ms ease-in-out`},
-        ...{ marginTop: props.prevStyle.marginTop},
+        transition: `all ${props.timeout}ms ease-in-out`,
+        marginTop: props.prevStyle.marginTop,
       }
       const barTransitionStyles = {
           entering: props.prevStyle,
@@ -40,19 +40,22 @@ function Bar(props) {
                 <div style={{
                     ...posDefaultStyle, 
                     ...posTransitionStyles[state],
-                    ...{width: `${props.width[0]}%`}
+                    width: `${props.width[0]}%`
                 }}>
                     {props.label}
                 </div>
                 <div style={{width: `${props.width[1]}%`}}>
                     <div
-                        style={{...classes.bar, ...barDefaultStyle, ...barTransitionStyles[state]}} 
+                        style={{
+                            ...classes.bar, 
+                            ...barDefaultStyle, 
+                            ...barTransitionStyles[state]}} 
                     />
                 </div>
                 <div style={{
                     ...posDefaultStyle, 
                     ...posTransitionStyles[state],
-                    ...{width: `${props.width[2]}%`}
+                    width: `${props.width[2]}%`
                 }}>
                     <div style={{...props.textBoxStyle}}>
                         {props.value}
