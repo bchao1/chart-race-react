@@ -4,8 +4,6 @@
 
 > https://www.npmjs.com/package/chart-race-react .
 
-<p align=center><img src="./assets/logo.png" width="600"></p>
-<br>
 <p align=center>
     <img src="./assets/demo.gif" width="800">
 </p>
