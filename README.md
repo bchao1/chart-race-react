@@ -7,13 +7,6 @@
 <p align=center><img src="./assets/logo.png" width="600"></p>
 <br>
 
-|||||
-|---|---|---|---|
-|Colors|<p align=center><img src="./assets/color1.gif" width="600"></p>|<p align=center><img src="./assets/color2.gif" width="600"></p>|<p align=center><img src="./assets/color3.gif" width="600"></p>|
-|Style|<p align=center><img src="./assets/border1.gif" width="600"></p>|<p align=center><img src="./assets/border2.gif" width="600"></p>|<p align=center><img src="./assets/border3.gif" width="600"></p>|
-|Speed|<p align=center><img src="./assets/speed3.gif" width="600"></p>|<p align=center><img src="./assets/speed1.gif" width="600"></p>|<p align=center><img src="./assets/speed2.gif" width="600"></p>|
-|||||
-
 ## Quick Start
 ```
 npm install --save chart-race-react
@@ -27,6 +20,15 @@ You should wrap `BarChart` inside a container `div` that acts as a sandbox. The 
     <BarChart />
 </div>
 ```
+## Demo
+
+|||||
+|---|---|---|---|
+|Colors|<p align=center><img src="./assets/color1.gif" width="600"></p>|<p align=center><img src="./assets/color2.gif" width="600"></p>|<p align=center><img src="./assets/color3.gif" width="600"></p>|
+|Style|<p align=center><img src="./assets/border1.gif" width="600"></p>|<p align=center><img src="./assets/border2.gif" width="600"></p>|<p align=center><img src="./assets/border3.gif" width="600"></p>|
+|Speed|<p align=center><img src="./assets/speed3.gif" width="600"></p>|<p align=center><img src="./assets/speed1.gif" width="600"></p>|<p align=center><img src="./assets/speed2.gif" width="600"></p>|
+|||||
+
 ## Usage 
 > Passing props.
 
