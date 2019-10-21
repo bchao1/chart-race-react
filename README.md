@@ -1,11 +1,12 @@
 # `chart-race-react`
 > 📊 Seamless & fully customizable bar chart race component for React https://www.npmjs.com/package/chart-race-react .
 
-||||
-|---|---|---|
-|<p align=center><img src="./assets/color1.gif" width="600"></p>|<p align=center><img src="./assets/color2.gif" width="600"></p>|<p align=center><img src="./assets/color3.gif" width="600"></p>|
-|<p align=center><img src="./assets/border1.gif" width="600"></p>|<p align=center><img src="./assets/border2.gif" width="600"></p>|<p align=center><img src="./assets/border3.gif" width="600"></p>|
-||||
+|||||
+|---|---|---|---|
+|Colors|<p align=center><img src="./assets/color1.gif" width="600"></p>|<p align=center><img src="./assets/color2.gif" width="600"></p>|<p align=center><img src="./assets/color3.gif" width="600"></p>|
+|Style|<p align=center><img src="./assets/border1.gif" width="600"></p>|<p align=center><img src="./assets/border2.gif" width="600"></p>|<p align=center><img src="./assets/border3.gif" width="600"></p>|
+|Speed|<p align=center><img src="./assets/speed3.gif" width="600"></p>|<p align=center><img src="./assets/speed1.gif" width="600"></p>|<p align=center><img src="./assets/speed2.gif" width="600"></p>|
+|||||
 
 ## Quick Start
 ```
