@@ -10,7 +10,7 @@
 npm install --save chart-race-react
 ```
 ```javascript
-import { BarChart } from 'chart-race-react';
+import BarChart from 'chart-race-react';
 ```
 You should wrap `BarChart` inside a container `div` that acts as a sandbox. The width of the `BarChart` fits the container width.
 ```jsx
