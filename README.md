@@ -21,10 +21,11 @@ You should wrap `BarChart` inside a container `div` that acts as a sandbox. The 
 ## Usage 
 > Passing props.
 
-You will need to pass your own props to the `BarChart` component.
+You will need to pass your own props to the `BarChart` component. Refer to `examples` for more information.
 
 |Prop|Type|Explanation|
 |---|---|---|
+|**start**|Boolean|Defines whether the bar chart race has started. Default is `true` and the chart race will start as the component mounts.|
 |**data**|Object|An object with keys being the data field name and value being Array data. `data[key].length` should be equal to **len**.|
 |**timeline**|Array|An array defining the time indices. Length should be equal to **len**.|
 |**labels**|Object|An object with keys being the data field name and value being the HTML element that acts as the data field's label.|
