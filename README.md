@@ -1,5 +1,5 @@
 # `chart-race-react`
-> 📊 Seamless & fully customizable bar chart race component for React. 
+> 📊 Seamless & fully customizable bar chart race component for React https://www.npmjs.com/package/chart-race-react .
 <br>
 <p align=center>
     <img src="./assets/demo_icon.gif" width="800">
