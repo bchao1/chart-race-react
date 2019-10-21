@@ -5,6 +5,11 @@
     <img src="./assets/demo_icon.gif" width="800">
 </p>
 
+||||
+|---|---|---|
+|<p align=center><img src="./assets/color1.gif" width="600"></p>|<p align=center><img src="./assets/color2.gif" width="600"></p>|<p align=center><img src="./assets/color3.gif" width="600"></p>|
+|<p align=center><img src="./assets/border1.gif" width="600"></p>|<p align=center><img src="./assets/border2.gif" width="600"></p>|<p align=center><img src="./assets/border3.gif" width="600"></p>|
+
 ## Quick Start
 ```
 npm install --save chart-race-react
