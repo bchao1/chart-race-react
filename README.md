@@ -2,7 +2,7 @@
 
 > 📊 Seamless & fully customizable bar chart race component for React https://www.npmjs.com/package/chart-race-react .
 
-<p align=center><img src="./assets/logo.png" width="600"></p>
+<p align=center><img src="./assets/logo.png" width="800"></p>
 <br>
 
 |||||
