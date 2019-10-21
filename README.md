@@ -6,6 +6,9 @@
 
 <p align=center><img src="./assets/logo.png" width="600"></p>
 <br>
+<p align=center>
+    <img src="./assets/demo.gif" width="800">
+</p>
 
 ## Quick Start
 ```
@@ -52,14 +55,6 @@ You will need to pass your own props to the `BarChart` component. Refer to `exam
 ## More Demo 
 Easibly define custom data, text styles, colors, duration, and layout.
 
-> Use your own data.
-<br>
-<p align=center>
-    <img src="./assets/demo.gif" width="800">
-</p>
-
-> Add labels with images.
-<br>
 <p align=center>
     <img src="./assets/demo_icon.gif" width="800">
 </p>
