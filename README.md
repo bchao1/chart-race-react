@@ -4,9 +4,14 @@
 
 > https://www.npmjs.com/package/chart-race-react .
 
-<p align=center>
-    <img src="./assets/demo.gif" width="800">
-</p>
+<br>
+
+|||||
+|---|---|---|---|
+|Colors|<p align=center><img src="./assets/color1.gif" width="600"></p>|<p align=center><img src="./assets/color2.gif" width="600"></p>|<p align=center><img src="./assets/color3.gif" width="600"></p>|
+|Style|<p align=center><img src="./assets/border1.gif" width="600"></p>|<p align=center><img src="./assets/border2.gif" width="600"></p>|<p align=center><img src="./assets/border3.gif" width="600"></p>|
+|Speed|<p align=center><img src="./assets/speed3.gif" width="600"></p>|<p align=center><img src="./assets/speed1.gif" width="600"></p>|<p align=center><img src="./assets/speed2.gif" width="600"></p>|
+|||||
 
 ## Quick Start
 ```
@@ -21,15 +26,6 @@ You should wrap `BarChart` inside a container `div` that acts as a sandbox. The 
     <BarChart />
 </div>
 ```
-## Demo
-
-|||||
-|---|---|---|---|
-|Colors|<p align=center><img src="./assets/color1.gif" width="600"></p>|<p align=center><img src="./assets/color2.gif" width="600"></p>|<p align=center><img src="./assets/color3.gif" width="600"></p>|
-|Style|<p align=center><img src="./assets/border1.gif" width="600"></p>|<p align=center><img src="./assets/border2.gif" width="600"></p>|<p align=center><img src="./assets/border3.gif" width="600"></p>|
-|Speed|<p align=center><img src="./assets/speed3.gif" width="600"></p>|<p align=center><img src="./assets/speed1.gif" width="600"></p>|<p align=center><img src="./assets/speed2.gif" width="600"></p>|
-|||||
-
 ## Usage 
 > Passing props.
 
@@ -53,6 +49,13 @@ You will need to pass your own props to the `BarChart` component. Refer to `exam
 ## More Demo 
 Easibly define custom data, text styles, colors, duration, and layout.
 
+> Add images to data labels.
 <p align=center>
     <img src="./assets/demo_icon.gif" width="800">
+</p>
+<br>
+
+> Plugin your own data.
+<p align=center>
+    <img src="./assets/demo.gif" width="800">
 </p>
