@@ -1,7 +1,15 @@
-import React from 'react';
-import './App.css';
-import BarChart from './BarChart';
+/**
+ * @file demo.js
+ */
+import React, { Component } from 'react';
+
 import data from './data';
+
+// Styles
+import './App.css';
+
+// Local components
+import BarChart from '../src/BarChart';
 
 const randomColor = () => {
   return `rgb(${255 * Math.random()}, ${255 * Math.random()}, ${255})`;
@@ -9,14 +17,14 @@ const randomColor = () => {
 
 const len = data[Object.keys(data)[0]].length;
 const keys = Object.keys(data);
-const colors = keys.reduce((res, item) => ({ 
-    ...res, 
-    ...{ [item]: randomColor() } 
+const colors = keys.reduce((res, item) => ({
+    ...res,
+    ...{ [item]: randomColor() }
 }), {});
 
 const labels = keys.reduce((res, item, idx) => {
   return{
-  ...res, 
+  ...res,
   ...{[item]: (
     <div style={{textAlign:"center",}}>
       <div>{item}</div>
@@ -26,14 +34,14 @@ const labels = keys.reduce((res, item, idx) => {
 
 const time = Array(20).fill(0).map((itm, idx) => idx + 1);
 
-class App extends React.Component {
+class App extends Component {
   render(){
     return (
       <div className="App">
         <div className="container">
-          <BarChart 
+          <BarChart
             start={true}
-            data={data} 
+            data={data}
             timeline={time}
             labels={labels}
             colors={colors}
