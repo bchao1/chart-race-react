@@ -16,3 +16,4 @@ src/
 .gitignore
 babel.config.js
 README.md
+yarn.lock
