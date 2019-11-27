@@ -38,8 +38,12 @@ function Bar(props) {
         <motion.div>
           <Fragment>
             <motion.div
+              initial={{
+                marginTop: props.prevStyle.marginTop,
+              }}
               animate={{
-                width: `${props.width[0]}%`
+                width: `${props.width[0]}%`,
+                marginTop: props.currStyle.marginTop,
               }}
               transition={{
                 ease: 'easeOut',
@@ -59,11 +63,26 @@ function Bar(props) {
             >
               <motion.div
                 style={{
-                  ...classes.bar,
-                }}/>
+                  ...classes.bar
+                }}
+                initial={{
+                  ...props.prevStyle,
+                }}
+                animate={{
+                  ...props.currStyle,
+                }}
+                transition={{
+                  ease: 'easeOut',
+                  duration: 1.25
+                }}
+              />
             </motion.div>
             <motion.div
+              initial={{
+                marginTop: props.prevStyle.marginTop,
+              }}
               animate={{
+                marginTop: props.currStyle.marginTop,
                 width: `${props.width[2]}%`
               }}
               transition={{
