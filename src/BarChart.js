@@ -28,7 +28,7 @@ class BarChart extends React.Component {
             started: props.start
         };
     }
-  
+
     componentDidMount = () => {
       if(this.props.start){
         var intervalId = setInterval(this.update, this.props.timeout + this.props.delay);
@@ -46,7 +46,7 @@ class BarChart extends React.Component {
     componentWillUnmount = () => {
       clearInterval(this.state.intervalId);
     }
-  
+
     update = () => {
       if(this.state.idx + 1 === this.props.timeline.length) {
         clearInterval(this.state.intervalId);
@@ -67,7 +67,7 @@ class BarChart extends React.Component {
         if(descending === undefined) descending = true;
         let toSort = Object.keys(this.props.data).map(name => {
             return {
-                name: name, 
+                name: name,
                 val: this.props.data[name][i]
             };
         });
@@ -98,7 +98,7 @@ class BarChart extends React.Component {
       };
       return [value, hidden, currStyle, prevStyle];
     }
-  
+
     render(){
       return (
         <div style={classes.container}>
