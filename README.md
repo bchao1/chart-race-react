@@ -15,7 +15,7 @@
 
 ## Quick Start
 ```
-npm install --save chart-race-react
+npm install --save chart-race-react react-transition-group
 ```
 ```javascript
 import BarChart from 'chart-race-react';
