@@ -36,8 +36,8 @@ class BarChart extends React.Component {
       }
     }
 
-    componentWillReceiveProps(nextProps) {
-      if (nextProps.start) {
+    componentDidUpdate(prevProps) {
+      if (this.props.start && !prevProps.start) {
         var intervalId = setInterval(this.update, this.props.timeout + this.props.delay);
         this.setState({intervalId: intervalId});
       }
@@ -71,7 +71,7 @@ class BarChart extends React.Component {
                 val: this.props.data[name][i]
             };
         });
-        toSort.sort((left, right) => descending ? left.val < right.val : left.val > right.val);
+        toSort.sort((left, right) => descending ? left.val < right.val ? 1: left.val > right.val ? -1 : 0  : left.val < right.val ? 1 : left.val < right.val ? -1 : 0);
         toSort = toSort.slice(0, this.maxItems);
         const maxVal = Math.max.apply(Math, toSort.map(item => item.val));
         return [toSort.reduce((ret, item, idx) => ({
