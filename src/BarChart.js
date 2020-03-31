@@ -36,8 +36,8 @@ class BarChart extends React.Component {
       }
     }
 
-    componentWillReceiveProps(nextProps) {
-      if (nextProps.start) {
+    componentDidUpdate(prevProps) {
+      if (this.props.start && !prevProps.start) {
         var intervalId = setInterval(this.update, this.props.timeout + this.props.delay);
         this.setState({intervalId: intervalId});
       }
