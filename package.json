@@ -25,7 +25,7 @@
   "homepage": "https://github.com/Mckinsey666/chart-race-react#readme",
   "peerDependencies": {
     "react": "^16.10.2",
-x1    "framer-motion": "^1.6.17"
+    "framer-motion": "^1.6.17"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
